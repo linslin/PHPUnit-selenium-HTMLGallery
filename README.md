@@ -12,7 +12,7 @@ PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
 
 ## Tested with
 
-- TeamCity CI, phing & PHPUnit
+- TeamCity CI 8.XX, Phing 2.6.1 & PHPUnit 1.3.2
 
 ## Screenshots
 
