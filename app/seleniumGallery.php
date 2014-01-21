@@ -38,7 +38,7 @@ class seleniumGallery
     public $inputDir = '';
     
     /**
-     * Input directory. Directory to search selenium screenshots
+     * Base directory. Absolute path to library
      * @var string
      */
     public $baseDir = '';
@@ -117,12 +117,14 @@ class seleniumGallery
     }
     
     
+    /**
+     * Create thumbnails for menu view and menu items
+     */
     private function createThumbs()
     {
         if ($handle = opendir(getcwd().'/'.$this->inputDir.'/')) {
-        
             while (false !== ($file = readdir($handle))) {
-                if(pathinfo($file, PATHINFO_EXTENSION) === $this->_fileExtension){
+                if (pathinfo($file, PATHINFO_EXTENSION) === $this->_fileExtension) {
 
                     //make image dir writeable for thumb create
                     chmod(getcwd().'/'.$this->reportDir.'/image', 0775);

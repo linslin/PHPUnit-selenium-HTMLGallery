@@ -44,7 +44,7 @@ PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
     <target> 
         
     <adhoc-task name="seleniumGallery"><![CDATA[
-        class BarTask extends Task {
+        class seleniumGalleryTask extends Task {
           function main() {
              require_once 'lib/seleniumGallery/seleniumGallery.php';
              $seleniumGallery = new seleniumGallery();
@@ -60,4 +60,4 @@ PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
 3. A HTML-Gallery will be created in build/reports/selenium/gallery/
 
 ## License
-phpunit-seleniumGallery is released under MIT license.
+phpunit-seleniumGallery is released under GNU (GPL-3.0) license.
