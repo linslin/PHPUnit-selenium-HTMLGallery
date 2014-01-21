@@ -1,8 +1,8 @@
-# phpunit-seleniumHTMLGallery
+# PHPUnit-selenium-HTMLGallery
 =======================
 
 ## Notice
-phpUnit - php extension to generate a offline HTML-Gallery for selenium Screenshots.
+PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screenshots.
 
 ## Features
 
@@ -12,7 +12,7 @@ phpUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
 
 ## Tested with
 
-- TeamCity CI, phing & phpUnit
+- TeamCity CI, phing & PHPUnit
 
 ## Screenshots
 
