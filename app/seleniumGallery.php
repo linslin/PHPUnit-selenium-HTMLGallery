@@ -121,21 +121,18 @@ class seleniumGallery
     {
         if ($handle = opendir(getcwd().'/'.$this->inputDir.'/')) {
         
-            /* Das ist der korrekte Weg, ein Verzeichnis zu durchlaufen. */
             while (false !== ($file = readdir($handle))) {
                 if(pathinfo($file, PATHINFO_EXTENSION) === $this->_fileExtension){
 
-                 
+                    //make image dir writeable for thumb create
                     chmod(getcwd().'/'.$this->reportDir.'/image', 0775);
-                   
+                    
                     $phpThumb = new phpThumb();
                     $phpThumb->setSourceData(file_get_contents(getcwd().'/'.$this->inputDir.'/'.$file));
                     $phpThumb->setParameter('w', 400);
-//                     $phpThumb->setParameter('h', 550);⁄
                     $phpThumb->GenerateThumbnail();
                     $phpThumb->RenderToFile(getcwd().'/'.$this->reportDir.'/image/thumb_'.$file);
                     $phpThumb->purgeTempFiles();
-                    
                 }
             }
             closedir($handle);
