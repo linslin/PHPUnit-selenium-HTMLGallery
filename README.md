@@ -16,8 +16,8 @@ phpUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
 
 ## Screenshots
 
-![ScreenShot](https://github.com/linslin/phpunit-seleniumGallery/blob/development/art/screen1.png)
-![ScreenShot](https://github.com/linslin/phpunit-seleniumGallery/blob/development/art/screen2.png)
+![ScreenShot](https://raw2.github.com/linslin/phpunit-seleniumGallery/development/art/screen1.png)
+![ScreenShot](https://raw2.github.com/linslin/phpunit-seleniumGallery/development/art/screen2.png)
 
 
 
