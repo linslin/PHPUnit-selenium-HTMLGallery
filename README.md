@@ -4,13 +4,29 @@
 ## Notice
 phpUnit - php extension to generate a offline HTML-Gallery for selenium Screenshots.
 
+## Features
+
+- Create HTML offline gallery from selenium screenshot folder
+- Gallery comes with a Zoom function
+
+
+## Tested with
+
+- TeamCity CI, phing & phpUnit
+
+## Screenshots
+
+![ScreenShot](https://github.com/linslin/phpunit-seleniumGallery/master/art/screen1.jpg)
+![ScreenShot](https://github.com/linslin/phpunit-seleniumGallery/master/art/screen2.jpg)
+
+
 
 ## Install with phing
 
 1. Checkout https://github.com/linslin/phpunit-seleniumGallery into build/lib/
 2. Modify build.xml and ad ad-hoc: (this is on way you can run this script)
-
 ```xml
+<?xml version="1.0" encoding="UTF-8" ?>
 <project name="MyProject" default="hello">
 
     <!-- ============================================  -->
@@ -39,6 +55,7 @@ phpUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
       }
     ]]></adhoc-task>
 </project> 
+```
 
 3. A HTML-Gallery will be created in build/reports/selenium/gallery/
 
