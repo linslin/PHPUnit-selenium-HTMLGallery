@@ -11,7 +11,7 @@ PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
 
 ## Screenshots
 
-overview with menu and detail view
+### overview with menu and detail view
 ![ScreenShot](https://raw2.github.com/linslin/PHPUnit-selenium-HTMLGallery/development/art/screen1.png)
 
 comes with zoom function to check pixels ;)
