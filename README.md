@@ -12,13 +12,13 @@ PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
 ## Screenshots
 
 ![ScreenShot](https://raw2.github.com/linslin/PHPUnit-selenium-HTMLGallery/development/art/screen1.png)
-- overview with menu and detail view
+overview with menu and detail view
 
 ![ScreenShot](https://raw2.github.com/linslin/PHPUnit-selenium-HTMLGallery/development/art/screen2.png)
-- comes with zoom function to check pixels ;)
+comes with zoom function to check pixels ;)
 
 ![ScreenShot](https://raw2.github.com/linslin/PHPUnit-selenium-HTMLGallery/development/art/screen3.png)
-- selenium also works with hybrid app and ripple 
+selenium also works with hybrid app and ripple 
 
 
 ## Tested with
