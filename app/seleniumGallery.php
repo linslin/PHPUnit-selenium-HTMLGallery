@@ -56,7 +56,7 @@ class seleniumGallery
     private $_template = 'views/default.php';
     
     /**
-     * Image file array
+     * Image file array, collected images will be stored here
      * @var array
      */
     private $_images = array();
@@ -75,6 +75,8 @@ class seleniumGallery
     
     /**
      * Generate generate
+     * 
+     * @return seleniumGallery
      */
     public function generate()
     {
@@ -84,6 +86,7 @@ class seleniumGallery
         // try make gallery
         if (!empty($this->_images)) {
             
+            //Init template
             $viewTemplate = file_get_contents($this->baseDir.'/views/part-header.html');
             $bodyTemplate = file_get_contents($this->baseDir.'/views/part-body.html');
             $imagelistTemplate = file_get_contents($this->baseDir.'/views/part-imagelist.html');
@@ -113,12 +116,18 @@ class seleniumGallery
             
             //creat thumbs
             $this->createThumbs();
-        } 
+        } else {
+            echo "\nInfo: seleniumGallery no images found in: ".getcwd().'/'.$this->inputDir.'/'."\n";
+        }
+        
+        return $this;
     }
     
     
     /**
      * Create thumbnails for menu view and menu items
+     * 
+     * @return seleniumGallery
      */
     private function createThumbs()
     {
@@ -139,11 +148,15 @@ class seleniumGallery
             }
             closedir($handle);
         }
+        
+        return $this;
     }
     
     
     /**
      * Readout all png files from input dir
+     * 
+     * @return seleniumGallery
      */
     private function collectImage()
     {
@@ -158,6 +171,8 @@ class seleniumGallery
             }
             closedir($handle);
         }
+
+        return $this;
     }
 }
 ?>
