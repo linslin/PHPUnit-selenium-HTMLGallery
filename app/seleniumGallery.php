@@ -113,7 +113,9 @@ class seleniumGallery
             
             //creat thumbs
             $this->createThumbs();
-        } 
+        } else {
+            echo "\nInfo: seleniumGallery no images found in: ".getcwd().'/'.$this->inputDir.'/'."\n";
+        }
     }
     
     
