@@ -9,19 +9,23 @@ PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
 - Create HTML offline gallery from selenium screenshot folder
 - Gallery comes with a Zoom function
 
-
-## Tested with
-
-- TeamCity CI, phing & PHPUnit
-
 ## Screenshots
 
 ![ScreenShot](https://raw2.github.com/linslin/PHPUnit-selenium-HTMLGallery/development/art/screen1.png)
+#### overview with menu and detail view
+
 ![ScreenShot](https://raw2.github.com/linslin/PHPUnit-selenium-HTMLGallery/development/art/screen2.png)
+#### comes with zoom function to check pixels ;)
+
+![ScreenShot](https://raw2.github.com/linslin/PHPUnit-selenium-HTMLGallery/development/art/screen3.png)
+#### selenium also works with hybrid app and ripple 
 
 
+## Tested with
 
-## Install with phing
+- TeamCity CI 8.XX, Phing 2.6.1 & PHPUnit 1.3.2
+
+## Install & configuration with Phing
 
 1. Checkout https://github.com/linslin/phpunit-seleniumGallery into build/lib/
 2. Modify build.xml and ad ad-hoc: (this is on way you can run this script)
@@ -44,7 +48,7 @@ PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
     <target> 
         
     <adhoc-task name="seleniumGallery"><![CDATA[
-        class BarTask extends Task {
+        class seleniumGalleryTask extends Task {
           function main() {
              require_once 'lib/seleniumGallery/seleniumGallery.php';
              $seleniumGallery = new seleniumGallery();
@@ -60,4 +64,4 @@ PHPUnit - php extension to generate a offline HTML-Gallery for selenium Screensh
 3. A HTML-Gallery will be created in build/reports/selenium/gallery/
 
 ## License
-phpunit-seleniumGallery is released under MIT license.
+phpunit-seleniumGallery is released under GNU (GPL-3.0) license.
